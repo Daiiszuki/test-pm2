@@ -1,0 +1,123 @@
+2026-03-03 19:18:57: Traceback (most recent call last):
+2026-03-03 19:18:57:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 20, in run_script
+2026-03-03 19:18:57:     result = subprocess.run([sys.executable, script_path], check=True)
+2026-03-03 19:18:57:              ^^^^^^^^^^^^^^^
+2026-03-03 19:18:57: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-03 19:18:57:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 571, in run
+2026-03-03 19:18:57:     raise CalledProcessError(retcode, process.args,
+2026-03-03 19:18:57: : Command '['/opt/anaconda3/bin/python', 'test-pmt2.py']' returned non-zero exit status 1.
+2026-03-03 19:18:57: 
+2026-03-03 19:18:57: During handling of the above exception, another exception occurred:
+2026-03-03 19:18:57: 
+2026-03-03 19:18:57: Traceback (most recent call last):
+2026-03-03 19:18:57:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 47, in <module>
+2026-03-03 19:18:57:     main()
+2026-03-03 19:18:57:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 38, in main
+2026-03-03 19:18:57:     success = run_script(script)
+2026-03-03 19:18:57:       ^^^^^^^^^^^^^^^^^^
+2026-03-03 19:18:57:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 28, in run_script
+2026-03-03 19:18:57:     time.sleep(RETRY_DELAY)
+2026-03-03 19:18:57: KeyboardInterrupt
+2026-03-03 19:23:00: Fatal Python error: init_import_site: Failed to import the site module
+2026-03-03 19:23:00: Python runtime state: initialized
+2026-03-03 19:23:00: Traceback (most recent call last):
+2026-03-03 19:23:00:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-03-03 19:23:00:   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2026-03-03 19:23:00:   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2026-03-03 19:23:00:   File "<frozen importlib._bootstrap>", line 980, in exec_module
+2026-03-03 19:23:00:   File "<frozen site>", line 616, in <module>
+2026-03-03 19:23:00:   File "<frozen site>", line 603, in main
+2026-03-03 19:23:00:   File "<frozen site>", line 384, in addsitepackages
+2026-03-03 19:23:00:   File "<frozen site>", line 226, in addsitedir
+2026-03-03 19:23:00:   File "<frozen site>", line 186, in addpackage
+2026-03-03 19:23:00:   File "<string>", line 1, in <module>
+2026-03-03 19:23:00:   File "/opt/anaconda3/lib/python3.11/importlib/__init__.py", line 57, in <module>
+2026-03-03 19:23:00:     import warnings
+2026-03-03 19:23:00:   File "/opt/anaconda3/lib/python3.11/warnings.py", line 200, in <module>
+2026-03-03 19:23:00:     class _OptionError(Exception):
+2026-03-03 19:23:00: KeyboardInterrupt
+2026-03-03 20:35:33: Traceback (most recent call last):
+2026-03-03 20:35:33:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 5, in <module>
+2026-03-03 20:35:33:     import win32com.Client as win32
+2026-03-03 20:35:33: ModuleNotFoundError: No module named 'win32com'
+2026-03-03 20:37:00: Traceback (most recent call last):
+2026-03-03 20:37:00:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 5, in <module>
+2026-03-03 20:37:00:     import win32com.Client as win32
+2026-03-03 20:37:00: ModuleNotFoundError: No module named 'win32com'
+2026-03-03 20:58:08: Traceback (most recent call last):
+2026-03-03 20:58:08:   File "/Users/mac/Documents/GitHub/test-pm2/test-pmt.py", line 54, in <module>
+2026-03-03 20:58:08:     run_etl()
+2026-03-03 20:58:08:   File "/Users/mac/Documents/GitHub/test-pm2/test-pmt.py", line 30, in run_etl
+2026-03-03 20:58:08:     time.sleep(2)
+2026-03-03 20:58:08: KeyboardInterrupt
+2026-03-03 20:58:08: Traceback (most recent call last):
+2026-03-03 20:58:08:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 93, in <module>
+2026-03-03 20:58:08:     main()
+2026-03-03 20:58:08:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 61, in main
+2026-03-03 20:58:08:     success = run_script(script)
+2026-03-03 20:58:08:               ^^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:08:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 38, in run_script
+2026-03-03 20:58:08:     subprocess.run([sys.executable, script_path], check=True)
+2026-03-03 20:58:08:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 550, in run
+2026-03-03 20:58:08:     stdout, stderr = process.communicate(input, timeout=timeout)
+2026-03-03 20:58:08:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:08:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 1201, in communicate
+2026-03-03 20:58:08:     self.wait()
+2026-03-03 20:58:08:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 1264, in wait
+2026-03-03 20:58:08:     return self._wait(timeout=timeout)
+2026-03-03 20:58:08:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:08:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 2046, in _wait
+2026-03-03 20:58:08:     (pid, sts) = self._try_wait(0)
+2026-03-03 20:58:08:                  ^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:08:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 2004, in _try_wait
+2026-03-03 20:58:08:     (pid, sts) = os.waitpid(self.pid, wait_flags)
+2026-03-03 20:58:08:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:08: KeyboardInterrupt
+2026-03-03 20:58:40: Traceback (most recent call last):
+2026-03-03 20:58:40:   File "/Users/mac/Documents/GitHub/test-pm2/test-pmt.py", line 54, in <module>
+2026-03-03 20:58:40:     run_etl()
+2026-03-03 20:58:40:   File "/Users/mac/Documents/GitHub/test-pm2/test-pmt.py", line 30, in run_etl
+2026-03-03 20:58:40:     time.sleep(2)
+2026-03-03 20:58:40: KeyboardInterrupt
+2026-03-03 20:58:40: Traceback (most recent call last):
+2026-03-03 20:58:40:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 93, in <module>
+2026-03-03 20:58:40:     main()
+2026-03-03 20:58:40:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 61, in main
+2026-03-03 20:58:40:     success = run_script(script)
+2026-03-03 20:58:40:               ^^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:40:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 38, in run_script
+2026-03-03 20:58:40:     subprocess.run([sys.executable, script_path], check=True)
+2026-03-03 20:58:40:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 550, in run
+2026-03-03 20:58:40:     stdout, stderr = process.communicate(input, timeout=timeout)
+2026-03-03 20:58:40: ^
+2026-03-03 20:58:40:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 1201, in communicate
+2026-03-03 20:58:40:     self.wait()
+2026-03-03 20:58:40:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 1264, in wait
+2026-03-03 20:58:40:     return self._wait(timeout=timeout)
+2026-03-03 20:58:40: ^^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:40:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 2046, in _wait
+2026-03-03 20:58:40:     (pid, sts) = self._try_wait(0)
+2026-03-03 20:58:40:                ^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:40:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 2004, in _try_wait
+2026-03-03 20:58:40:     (pid, sts) = os.waitpid(self.pid, wait_flags)
+2026-03-03 20:58:40:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-03 20:58:40: KeyboardInterrupt
+2026-03-03 20:59:08: Traceback (most recent call last):
+2026-03-03 20:59:08:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 38, in run_script
+2026-03-03 20:59:08:     subprocess.run([sys.executable, script_path], check=True)
+2026-03-03 20:59:08:   File "/opt/anaconda3/lib/python3.11/subprocess.py", line 571, in run
+2026-03-03 20:59:08:     raise CalledProcessError(retcode, process.args,
+2026-03-03 20:59:08: subprocess.CalledProcessError: Command '['/Users/mac/Documents/GitHub/test-pm2/.venv/bin/python', 'test-pmt2.py']' returned non-zero exit status 1.
+2026-03-03 20:59:08: 
+2026-03-03 20:59:08: During handling of the above exception, another exception occurred:
+2026-03-03 20:59:08: 
+2026-03-03 20:59:08: Traceback (most recent call last):
+2026-03-03 20:59:08:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 93, in <module>
+2026-03-03 20:59:08:     main()
+2026-03-03 20:59:08:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 61, in main
+2026-03-03 20:59:08:     success = run_script(script)
+2026-03-03 20:59:08:               ^^^^^^^^^^^^^^^^^^
+2026-03-03 20:59:08:   File "/Users/mac/Documents/GitHub/test-pm2/run_pipeline.py", line 51, in run_script
+2026-03-03 20:59:08:     send_email_oulook(to=TO, subject=f"❌ {script_path} FAILED.", body=f"[{datetime.now()}] ❌ {script_path} FAILED.")
+2026-03-03 20:59:08:     ^^^^^^^^^^^^^^^^^
+2026-03-03 20:59:08: NameError: name 'send_email_oulook' is not defined

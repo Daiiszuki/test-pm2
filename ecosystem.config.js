@@ -5,7 +5,7 @@ module.exports = {
     interpreter: "python", // or path to your venv: "./venv/bin/python"
     
     // THE SCHEDULE
-    cron_restart: "15 18 * * *", // Run every day at 2:00 AM
+    cron_restart: "01 21 * * *", // Run every day at 2:00 AM
     
     // IMPORTANT SETTINGS FOR ETL
     autorestart: false, // Don't loop; wait for the next cron

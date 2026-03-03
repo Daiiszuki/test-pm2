@@ -8,7 +8,7 @@ LOG_FILE = "etl_history.json"
 
 def run_etl():
     print(f"[{datetime.now()}] 🚀 ETL 2 Started.")
-    
+    agggg
     # 1. SIMULATE EXTRACT
     print(f"[{datetime.now()}] 📥 Extracting 2 from source...")
     time.sleep(2) # Simulate network delay
