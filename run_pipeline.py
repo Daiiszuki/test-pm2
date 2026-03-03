@@ -5,7 +5,7 @@ from datetime import datetime
 
 # CONFIGURATION
 # List your scripts in order
-PIPELINE = ["extract.py", "transform.py", "load.py"]
+PIPELINE = ["test-pmt.py", "test-pmt2.py", "test-pmt3.py"]
 MAX_RETRIES = 3
 RETRY_DELAY = 10  # seconds to wait between retries
 

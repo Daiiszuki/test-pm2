@@ -58,20 +58,28 @@ Web based dashboard, cross servers with diagnostic system:
 $ pm2 plus
 
 ## Chron
-*    *    *    *    *    *
-  ┬    ┬    ┬    ┬    ┬    ┬
-  │    │    │    │    │    └─ day of week (0 - 7) (0 or 7 is Sun)
-  │    │    │    │    └────── month (1 - 12)
-  │    │    │    └─────────── day of month (1 - 31)
-  │    │    └──────────────── hour (0 - 23)
-  │    └───────────────────── minute (0 - 59)
-  └────────────────────────── second (0 - 59, optional)
+┌─────────── minute (0 - 59)
+ │ ┌───────── hour (0 - 23)
+ │ │ ┌─────── day of month (1 - 31)
+ │ │ │ ┌───── month (1 - 12)
+ │ │ │ │ ┌─── day of week (0 - 6) (0 is Sunday)
+ │ │ │ │ │
+ * * * * *
 
   Common examples:
-*/15 * * * * : Every 15 minutes.
-0 * * * * : Every hour (at the top of the hour).
-30 2 * * * : Every day at 2:30 AM.
-0 0 * * 1 : Every Monday at midnight.
-0 22 * * 1-5 : 10:00 PM every weekday (Mon-Fri).
+
+Goal	Cron Syntax
+Every Minute	* * * * *
+Every 30 Mins	*/30 * * * *
+Every Hour	0 * * * *
+Every Morning (6 AM)	0 6 * * *
+Every Sunday Midnight	0 0 * * 0
+Every 1st of the Month	0 0 1 * *
+
+
+* (Any/Every): "Every minute," "Every day," etc.
+, (And): To list specific times. 1,15,30 means at the 1st, 15th, and 30th minute.
+- (Range): 1-5 in the Day of Week slot means Monday through Friday.
+/ (Interval): */15 in the Minute slot means "every 15 minutes."
 
 
